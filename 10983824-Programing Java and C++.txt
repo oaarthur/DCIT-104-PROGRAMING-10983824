@@ -1,0 +1,52 @@
+Even Numbers(ASSIGNMENT 1)
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int sum = 0, number_of_even = 0;
+
+for(int a = 1; a < 10000; a++)
+
+if((i % 2) == 0){
+    sum = sum + a;
+    number_of_even++;
+}
+double avg = sum/number_of_even;
+cout << "The average of all even numbers between 1 and 10000 is ";
+cout << avg;
+
+return 0;
+}
+
+Prime Number(ASSIGNMENT 2)
+import java.util.Scanner;
+
+public class PrimeSum {
+
+        public static void main(String[] args){
+            Scanner sc=new Scanner(System.in);
+
+            int x,num,count, sum_of_prime=0;
+            System.out.println("Please Enter maximum value: ");
+            int maxV=sc.nextInt();
+
+            System.out.println("Sum of Prime numbers between 1 and "+maxV+" are : ");
+
+            for(num=1; num<=maxV; num++){
+                count=0;
+                for(x=2; x<=num/2; x++){
+                    if(num%x==0){
+                        count++;
+                        break;
+                    }
+                }
+                if(count==0 && num !=1){
+                    sum_of_prime+=num;
+                }
+            }
+            System.out.println(sum_of_prime);
+        }
+
+}
